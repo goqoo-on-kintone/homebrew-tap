@@ -5,21 +5,21 @@
 class Gotenks < Formula
   desc "CLI tool to generate Go type definitions from kintone TypeScript .d.ts files"
   homepage "https://github.com/goqoo-on-kintone/gotenks"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.1.0/gotenks_0.1.0_darwin_amd64.tar.gz"
-      sha256 "554072ab4f684d06c15cb89cadcfe711d559dd8ca6fedda568b55f89c21fd023"
+      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.2.0/gotenks_0.2.0_darwin_amd64.tar.gz"
+      sha256 "95cf7cb072316d3627daa63952815596f69423405aff46229e09f64030d787a9"
 
       def install
         bin.install "gotenks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.1.0/gotenks_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8cb8972924ee4091a90a4d8dbce7562c4ec5ab7fdd8f632a2d8b6381720cf0dc"
+      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.2.0/gotenks_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a329ee622a4417fa829ab589f964df71ca613210a282e92e77187824ac562d0b"
 
       def install
         bin.install "gotenks"
@@ -29,15 +29,15 @@ class Gotenks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.1.0/gotenks_0.1.0_linux_amd64.tar.gz"
-      sha256 "cf08b57239d9ea58fa88102008a8b861af05164431ab0fcddc249a2bed349393"
+      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.2.0/gotenks_0.2.0_linux_amd64.tar.gz"
+      sha256 "c6e629ccb958157330450731e2f5a5f038ef42f361c06ee5af49200f4b2d6135"
       def install
         bin.install "gotenks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.1.0/gotenks_0.1.0_linux_arm64.tar.gz"
-      sha256 "7725e2a241f25286654a72ee69da5d3304baa4e2f1bbaac4ea1c5de1a7073319"
+      url "https://github.com/goqoo-on-kintone/gotenks/releases/download/v0.2.0/gotenks_0.2.0_linux_arm64.tar.gz"
+      sha256 "54295267b37b999d7d67a4197a67d8a9016eed414c5f96d5efe915f1fae62222"
       def install
         bin.install "gotenks"
       end
